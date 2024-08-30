@@ -25,7 +25,7 @@
         },
         "library": {
           "title": "Explore the city's landmarks in the application's library",
-          "body": "The app's library contains a collection of the city's landmarks. You can even visit landmarks in the list without needing to scan them first. The library also contains additional information about each landmark, including historical facts and photos. You can use the library to learn more about the city's history and culture."
+          "body": "The app's library contains a collection of all the city's landmarks. You can even visit landmarks in the list without needing to scan them first. The library also contains additional information about each landmark, including historical facts and photos. You can use the library to learn more about the city's history and culture."
         }
       },
       "download": "Download our app",
@@ -73,15 +73,15 @@
       "section": {
         "download": {
           "title": "Preuzmite aplikaciju i pokrenite instalaciju",
-          "body": "REMOVE ME"
+          "body": "Kliknite na gumb za preuzimanje ispod, ili skenirajte QR kod kako biste preuzeli instalacijsku datoteku aplikacije. Nakon što se preuzimanje završi, pokrenite instalater kako biste završili proces. Nakon što je instalacija završena, možete početi koristiti aplikaciju."
         },
         "qr": {
-          "title": "Pronađite QR kodove na znamenitostima grada",
-          "body": "REMOVE ME"
+          "title": "Pronađite i skenirajte QR kodove na znamenitostima grada",
+          "body": "Skenirajte QR kod na raznim znamenitostima grada kako biste otključali dodatne informacije o toj lokaciji. Aplikacija će vas voditi kroz proces skeniranja QR koda i pregledavanja sadržaja. Nakon skeniranja, možete istražiti virtualnu rekonstrukciju događaja koji se odvio na znamenitosti. Aplikacija će vam također pružiti dodatne informacije o događaju i lokaciji."
         },
         "library": {
           "title": "Istražite gradske znamenitosti u zbirci aplikacije",
-          "body": "REMOVE ME"
+          "body": "Zbirka aplikacije sadrži kolekciju svih gradskih znamenitosti. Možete posjetiti znamenitosti na popisu čak i bez potrebe za prethodnim skeniranjem. Zbirka također sadrži dodatne informacije o svakoj znamenitosti, uključujući povijesne činjenice i fotografije. Možete koristiti zbirku kako biste saznali više o povijesti i kulturi grada."
         }
       },
       "download": "Preuzmite našu aplikaciju",
