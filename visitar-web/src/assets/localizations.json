@@ -17,15 +17,15 @@
       "section": {
         "download": {
           "title": "Download the app and run the installation",
-          "body": "REMOVE ME"
+          "body": "Click the download button below, or scan the QR code to download the app installation file. Once the download is complete, run the installer to finish the process. After the installation is complete, you can start using the app."
         },
         "qr": {
-          "title": "Find QR codes at the city's landmarks",
-          "body": "REMOVE ME"
+          "title": "Find and scan QR codes at the city's landmarks",
+          "body": "Scan the QR code at the many of the city's landmarks to unlock additional information about the location. The app will guide you through the process of scanning the QR code and viewing the content. After scanning, you can explore a virtual reenactment of the event that took place at the landmark. The app will also provide you with additional information about the event and the location."
         },
         "library": {
           "title": "Explore the city's landmarks in the application's library",
-          "body": "REMOVE ME"
+          "body": "The app's library contains a collection of the city's landmarks. You can even visit landmarks in the list without needing to scan them first. The library also contains additional information about each landmark, including historical facts and photos. You can use the library to learn more about the city's history and culture."
         }
       },
       "download": "Download our app",

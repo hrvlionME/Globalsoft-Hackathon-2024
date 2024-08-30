@@ -6,13 +6,14 @@ const HowToUse: React.FC = () => {
   const [t] = useTranslation();
   return (
     <>
-      <section className="mx-4 my-40 md:mx-20 lg:mx-40 xl:mx-72">
-        <h1 className="text-sec relative my-20 text-center text-6xl uppercase sm:text-6xl md:text-8xl">
+      <section className="mx-4 py-40 md:mx-20 lg:mx-40 xl:mx-72">
+        <h1 className="relative mb-20 text-center text-6xl uppercase text-sec sm:text-6xl md:text-8xl">
           {t("navbar.how-to-use")}
         </h1>
         <div className="mx-auto grid max-w-[90%] grid-cols-1 gap-y-8 sm:gap-y-12 lg:gap-y-16">
-          <div className="col-span-1">
-            <div className="block overflow-hidden rounded-3xl border border-gray-100 shadow-xl transition duration-300 md:flex">
+          {/* 1nd row: text image */}
+          <div className="col-span-1 rounded-3xl bg-white">
+            <div className="block overflow-hidden border border-gray-100 shadow-xl transition duration-300 md:flex">
               <div className="md:w-1/2">
                 <img
                   src={mobitelImage}
@@ -21,10 +22,10 @@ const HowToUse: React.FC = () => {
                 />
               </div>
               <div className="p-4 md:w-1/2 md:p-7">
-                <h2 className="text-sec py-3 text-center text-2xl transition duration-200 md:text-left md:text-2xl">
+                <h2 className="py-3 text-center text-2xl text-sec transition duration-200 md:text-left md:text-2xl">
                   {t("section.download.title")}
                 </h2>
-                <p className="text-gen pb-5 text-lg">
+                <p className="pb-5 text-lg text-gen">
                   {t("section.download.body")}
                 </p>
               </div>
@@ -32,8 +33,8 @@ const HowToUse: React.FC = () => {
           </div>
 
           {/* 2nd row: text image */}
-          <div className="col-span-1">
-            <div className="block flex-row-reverse overflow-hidden rounded-3xl border border-gray-100 shadow-xl transition duration-300 md:flex">
+          <div className="col-span-1 rounded-3xl bg-white">
+            <div className="block flex-row-reverse overflow-hidden border border-gray-100 shadow-xl transition duration-300 md:flex">
               <div className="md:w-1/2">
                 <img
                   src={qrCodeGuideImage}
@@ -42,17 +43,17 @@ const HowToUse: React.FC = () => {
                 />
               </div>
               <div className="p-4 md:w-1/2 md:p-7">
-                <h2 className="text-sec font-title py-3 text-center text-2xl transition duration-200 md:text-left md:text-2xl">
+                <h2 className="py-3 text-center font-title text-2xl text-sec transition duration-200 md:text-left md:text-2xl">
                   {t("section.qr.title")}
                 </h2>
-                <p className="text-gen pb-5 text-lg">{t("section.qr.body")}</p>
+                <p className="pb-5 text-lg text-gen">{t("section.qr.body")}</p>
               </div>
             </div>
           </div>
 
           {/* 3rd row: image text */}
-          <div className="col-span-1">
-            <div className="block overflow-hidden rounded-3xl border border-gray-100 shadow-xl transition duration-300 md:flex">
+          <div className="col-span-1 rounded-3xl bg-white">
+            <div className="block overflow-hidden border border-gray-100 shadow-xl transition duration-300 md:flex">
               <div className="md:w-1/2">
                 <img
                   src={mobitelImage}
@@ -61,10 +62,10 @@ const HowToUse: React.FC = () => {
                 />
               </div>
               <div className="p-4 md:w-1/2 md:p-7">
-                <h2 className="text-sec font-title py-3 text-center text-2xl transition duration-200 md:text-left md:text-2xl">
+                <h2 className="py-3 text-center font-title text-2xl text-sec transition duration-200 md:text-left md:text-2xl">
                   {t("section.library.title")}
                 </h2>
-                <p className="text-gen pb-5 text-lg">
+                <p className="pb-5 text-lg text-gen">
                   {t("section.library.body")}
                 </p>
               </div>

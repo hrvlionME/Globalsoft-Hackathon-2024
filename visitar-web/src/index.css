@@ -36,3 +36,25 @@
     font-optical-sizing: auto;
   }
 }
+
+@layer components {
+  #landing-page-title {
+    @apply z-10 text-6xl text-center text-black transition-opacity duration-1000 !bg-clip-text sm:text-6xl md:text-8xl;
+    background: radial-gradient(
+      circle at 100%,
+      #98d6ff,
+      #ffffff 50%,
+      #98d6ff 100%
+    );
+    font-weight: 600;
+    background-size: 200% auto;
+    -webkit-text-fill-color: transparent;
+    animation: animatedTextGradient 5s linear infinite, fadeIn 1s ease-out forwards;
+  }
+
+  @keyframes animatedTextGradient {
+    to {
+      background-position: 200% center;
+    }
+  }
+}

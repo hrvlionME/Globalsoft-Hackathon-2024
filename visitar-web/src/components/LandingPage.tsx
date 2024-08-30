@@ -4,7 +4,6 @@ import HowToUse from "./HowToUse";
 import Download from "./Download";
 import { useTranslation } from "react-i18next";
 import FAQ from "./FAQ";
-import ContactUs from "./ContactUs";
 
 const LandingPage: React.FC = () => {
   const [t] = useTranslation();
@@ -31,7 +30,8 @@ const LandingPage: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="flex-[1]"></div>
         <h1
-          className={`relative text-center text-6xl text-white transition-opacity duration-1000 sm:text-6xl md:text-8xl ${isLoaded ? "animate-fadeIn" : "opacity-0"}`}>
+          id="landing-page-title"
+          className={isLoaded ? "animate-fadeIn" : ""}>
           ŠIROKI BRIJEG
           <br />
           LANDMARKS AR
@@ -50,9 +50,6 @@ const LandingPage: React.FC = () => {
       </div>
       <div id="FAQ">
         <FAQ />
-      </div>
-      <div id="contact">
-        <ContactUs />
       </div>
     </>
   );
