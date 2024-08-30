@@ -3,6 +3,7 @@ import backgroundVideo from "../assets/backgroundVideo.mp4";
 import HowToUse from "./HowToUse";
 import Download from "./Download";
 import { useTranslation } from "react-i18next";
+import FAQ from "./FAQ";
 
 const LandingPage: React.FC = () => {
   const [t] = useTranslation();
@@ -45,6 +46,9 @@ const LandingPage: React.FC = () => {
       </div>
       <div id="download">
         <Download />
+      </div>
+      <div id="FAQ">
+        <FAQ />
       </div>
     </>
   );
