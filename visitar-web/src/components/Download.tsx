@@ -9,31 +9,35 @@ const Download: React.FC = () => {
     <>
       <div
         className="relative flex h-fit flex-col items-center justify-start bg-cover bg-center py-32"
-        style={{ backgroundImage: `url(${background})` }}>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${background})`,
+        }}>
+        <div className="absolute inset-0"></div>
         <h1 className="relative mx-8 text-center text-6xl uppercase text-white sm:text-6xl md:text-8xl">
           {t("download")}
         </h1>
-        <div className="flex justify-between gap-x-10">
-          <h2 className="sm:text-md relative my-5 text-center text-2xl text-white md:text-4xl">
-            {t("app-build")} v1.15
-          </h2>
-          <h2 className="sm:text-md relative my-5 text-center text-2xl text-white md:text-4xl">
-            <i>{format(new Date(), "MMM y")}</i>
-          </h2>
+        <div className="flex items-center justify-between gap-x-10">
+          <div className="z-10 mt-5 hidden rounded-sm bg-white p-2 md:flex">
+            <QRCodeSVG
+              value="/app.apk"
+              size={192}
+            />
+          </div>
+          <div className="my-4 flex h-min flex-row justify-center gap-8 rounded-md bg-gradient-to-br from-white/35 to-white/60 px-4 py-2 md:my-0 md:flex-col md:gap-2 md:p-4">
+            <h2 className="text-shadow-sm text-center font-mono text-white shadow-black/85 sm:text-base md:text-2xl">
+              {t("app-build")} v1.15
+            </h2>
+            <h2 className="text-shadow-sm text-center font-mono text-white shadow-black/85 sm:text-base md:text-2xl">
+              {format(new Date(), "MMM y")}
+            </h2>
+          </div>
         </div>
         <a
           href="/app.apk"
           download
-          className="bg-sec z-10 block rounded border-2 border-white px-32 py-2 text-white hover:bg-blue-800 focus:ring-1 md:hidden">
+          className="z-10 block rounded border-2 border-white bg-sec px-32 py-2 text-white hover:bg-blue-800 focus:ring-1 md:hidden">
           {t("android-version")}
         </a>
-        <div className="z-10 mt-5 hidden rounded-sm bg-white p-2 md:flex">
-          <QRCodeSVG
-            value="/app.apk"
-            size={192}
-          />
-        </div>
       </div>
     </>
   );

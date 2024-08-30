@@ -7,14 +7,14 @@ const HowToUse: React.FC = () => {
   const [t] = useTranslation();
   return (
     <>
-      <section className="mx-4 py-40 md:mx-20 lg:mx-40 xl:mx-72">
+      <section className="mx-[5%] py-40 md:mx-[10%]">
         <h1 className="relative mb-20 text-center text-6xl uppercase text-sec sm:text-6xl md:text-8xl">
           {t("navbar.how-to-use")}
         </h1>
         <div className="mx-auto grid max-w-[90%] grid-cols-1 gap-y-8 sm:gap-y-12 lg:gap-y-16">
 
-          <div className="col-span-1 rounded-3xl bg-white">
-            <div className="block overflow-hidden border border-gray-100 shadow-xl transition duration-300 md:flex">
+          <div className="col-span-1 overflow-hidden rounded-3xl bg-white shadow-lg shadow-black/25">
+            <div className="block border border-gray-100 transition duration-300 md:flex">
               <div className="md:w-1/2">
                 <img
                   src={mobitelImage}
@@ -33,8 +33,8 @@ const HowToUse: React.FC = () => {
             </div>
           </div>
 
-          <div className="col-span-1 rounded-3xl bg-white">
-            <div className="block flex-row-reverse overflow-hidden border border-gray-100 shadow-xl transition duration-300 md:flex">
+          <div className="col-span-1 overflow-hidden rounded-3xl bg-white shadow-lg shadow-black/25">
+            <div className="block flex-row-reverse border border-gray-100 transition duration-300 md:flex">
               <div className="md:w-1/2">
                 <img
                   src={qrCodeGuideImage}
@@ -51,8 +51,8 @@ const HowToUse: React.FC = () => {
             </div>
           </div>
 
-          <div className="col-span-1 rounded-3xl bg-white">
-            <div className="block overflow-hidden border border-gray-100 shadow-xl transition duration-300 md:flex">
+          <div className="col-span-1 overflow-hidden rounded-3xl bg-white shadow-lg shadow-black/25">
+            <div className="block border border-gray-100 transition duration-300 md:flex">
               <div className="md:w-1/2">
                 <img
                   src={libraryImage}
