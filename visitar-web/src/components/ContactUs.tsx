@@ -10,21 +10,24 @@ const ContactUs: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [submitted, setSubmitted] = useState(false);
 
-  const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({});
+  const [errors, setErrors] = useState<{
+    name?: string;
+    email?: string;
+    message?: string;
+  }>({});
 
   const validateField = (field: string, value: string) => {
     let error = "";
     switch (field) {
       case "name":
-        if (!value) error = "Name is required.";
+        if (!value) error = t("error.name-required");
         break;
       case "email":
-        if (!value) error = "Email is required.";
+        if (!value) error = t("error.email-required");
         break;
       case "message":
-        if (!value) error = "Message is required.";
+        if (!value) error = t("error.message-required");
         break;
       default:
         break;
@@ -47,7 +50,7 @@ const ContactUs: React.FC = () => {
         break;
     }
 
-    setErrors((prevErrors) => ({
+    setErrors(prevErrors => ({
       ...prevErrors,
       [field]: validateField(field, value),
     }));
@@ -61,7 +64,7 @@ const ContactUs: React.FC = () => {
     };
 
     const filteredErrors = Object.fromEntries(
-      Object.entries(validationErrors).filter(([_, value]) => value)
+      Object.entries(validationErrors).filter(entry => entry[1])
     );
 
     if (Object.keys(filteredErrors).length > 0) {
@@ -70,25 +73,29 @@ const ContactUs: React.FC = () => {
     }
 
     console.log(name, email, message);
+
     const formData = {
       name: name,
       email: email,
       message: message,
     };
+
     try {
       await axios.post("http://localhost:8000/api/sendMessage", formData);
-      toast.success("Message sent successfully!", {
+
+      toast.success(t("message-sent"), {
         position: "bottom-right",
         autoClose: 2000,
       });
+
       setName("");
       setEmail("");
       setMessage("");
       setErrors({});
-      setSubmitted(true);
     } catch (error) {
-      console.error("There was an error!", error);
-      toast.error("There was an error!", {
+      console.error("Error", error);
+
+      toast.error(t("error.generic"), {
         position: "bottom-right",
         autoClose: 2000,
       });
@@ -105,29 +112,36 @@ const ContactUs: React.FC = () => {
           <input
             type="text"
             placeholder={t("name")}
-            className={`text-md my-4 w-full rounded-lg px-2 py-3 shadow-md md:py-4 md:text-xl border-2 ${errors.name ? "border-red-500" : "border-gray-300"}`}
+            className={`text-md my-4 w-full rounded-lg border-2 px-2 py-3 shadow-md md:py-4 md:text-xl ${errors.name ? "border-red-500" : "border-gray-300"}`}
             value={name}
-            onChange={(e) => handleInputChange("name", e.target.value)}
+            onChange={e => handleInputChange("name", e.target.value)}
           />
-          {errors.name && <p className="text-red-500 text-sm text-left">{errors.name}</p>}
+          {errors.name && (
+            <p className="text-left text-sm text-red-500">{errors.name}</p>
+          )}
 
           <input
             type="text"
             placeholder={t("email")}
-            className={`text-md my-4 w-full rounded-lg px-2 py-3 shadow-md md:py-4 md:text-xl border-2 ${errors.email ? "border-red-500" : "border-gray-300"}`}
+            className={`text-md my-4 w-full rounded-lg border-2 px-2 py-3 shadow-md md:py-4 md:text-xl ${errors.email ? "border-red-500" : "border-gray-300"}`}
             value={email}
-            onChange={(e) => handleInputChange("email", e.target.value)}
+            onChange={e => handleInputChange("email", e.target.value)}
           />
-          {errors.email && <p className="text-red-500 text-sm text-left">{errors.email}</p>}
+          {errors.email && (
+            <p className="text-left text-sm text-red-500">{errors.email}</p>
+          )}
 
           <textarea
-            className={`text-md my-4 w-full rounded-lg px-2 py-3 shadow-md md:py-4 md:text-xl border-2 ${errors.message ? "border-red-500" : "border-gray-300"}`}
+            className={`text-md my-4 w-full rounded-lg border-2 px-2 py-3 shadow-md md:py-4 md:text-xl ${errors.message ? "border-red-500" : "border-gray-300"}`}
             placeholder={t("message")}
             rows={6}
             value={message}
-            onChange={(e) => handleInputChange("message", e.target.value)}
-          ></textarea>
-          {errors.message && <p className="text-red-500 text-sm text-left">{errors.message}</p>}
+            onChange={e =>
+              handleInputChange("message", e.target.value)
+            }></textarea>
+          {errors.message && (
+            <p className="text-left text-sm text-red-500">{errors.message}</p>
+          )}
 
           <button
             className="text-md my-4 w-full rounded-lg bg-white px-2 py-3 text-pri shadow-md md:py-4 md:text-xl"

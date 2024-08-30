@@ -52,7 +52,14 @@
       "name": "Name",
       "email": "Email",
       "message": "Message",
-      "send": "Send"
+      "send": "Send",
+      "error": {
+        "name-required": "Name is required",
+        "email-required": "Email is required",
+        "message-required": "Message is required",
+        "generic": "There was an error!"
+      },
+      "message-sent": "Message sent successfully!"
     }
   },
   "hr": {
@@ -108,7 +115,14 @@
       "name": "Ime",
       "email": "Email",
       "message": "Poruka",
-      "send": "Pošalji"
+      "send": "Pošalji",
+      "error": {
+        "name-required": "Morate unijeti ime",
+        "email-required": "Morate unijeti email adresu",
+        "message-required": "Morate unijeti poruku",
+        "generic": "Dogodila se greška!"
+      },
+      "message-sent": "Poruka uspješno poslana!"
     }
   }
 }
