@@ -25,7 +25,7 @@ const ContactUs: React.FC = () => {
 
   return (
     <>
-      <section className="bg-pri flex flex-col justify-around sm:flex-row">
+      <section className="flex flex-col justify-around bg-pri sm:flex-row">
         <div className="mx-16 flex flex-col py-12 text-center sm:py-20 lg:mx-auto lg:py-32">
           <h6 className="font-title text-xl text-white md:text-2xl lg:text-5xl">
             {t("contact-us.title")}
@@ -48,9 +48,9 @@ const ContactUs: React.FC = () => {
             rows={6}
             onChange={e => setMessage(e.target.value)}></textarea>
           <button
-            className="text-md text-pri my-4 w-full rounded-lg bg-white px-2 py-3 shadow-md md:py-4 md:text-xl"
+            className="text-md my-4 w-full rounded-lg bg-white px-2 py-3 text-pri shadow-md md:py-4 md:text-xl"
             onClick={submitData}>
-            {t("submit")}
+            {t("send")}
           </button>
         </div>
       </section>
