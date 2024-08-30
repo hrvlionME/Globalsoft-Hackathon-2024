@@ -5,7 +5,7 @@ import Menu from "./icons/Menu";
 import Globe from "./icons/Globe";
 import { useTranslation } from "react-i18next";
 
-const Navigation2: React.FC = () => {
+const Navigation: React.FC = () => {
   const [t, i18next] = useTranslation();
   // Used for small screen sizes
   const [sidebarOpened, setSidebarOpened] = useState(false);
@@ -76,4 +76,4 @@ const Navigation2: React.FC = () => {
   );
 };
 
-export default Navigation2;
+export default Navigation;
