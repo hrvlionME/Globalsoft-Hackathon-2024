@@ -57,11 +57,17 @@ const FAQ: React.FC = () => {
                 {t(item.question)}
               </h2>
 
-              {openItems[index] && (
-                <h3 className="text-pri my-5 text-lg md:text-2xl">
-                  {t(item.answer)}
-                </h3>
-              )}
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  openItems[index] ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                }`}
+              >
+                {openItems[index] && (
+                  <h3 className="text-pri my-5 text-lg md:text-2xl">
+                    {t(item.answer)}
+                  </h3>
+                )}
+              </div>
             </div>
 
             {index < faqItems.length - 1 && (
