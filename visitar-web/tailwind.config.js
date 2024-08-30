@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        title: ["Sansita", "sans-serif"],
-        body: ["Lato", "sans-serif"],
+        title: ["Raleway", "sans-serif"],
+        body: ["Montserrat", "sans-serif"],
       },
       colors: {
         pri: "#081F4D",
