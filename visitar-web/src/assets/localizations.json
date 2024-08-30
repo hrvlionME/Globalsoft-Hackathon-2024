@@ -30,7 +30,22 @@
       },
       "download": "Download our app",
       "app-build": "App build",
-      "android-version": "Android version"
+      "android-version": "Android version",
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "free-to-use": {
+          "question": "Is this application free to use?",
+          "answer": "Yes, this application is free to use."
+        },
+        "how-create-account": {
+          "question": "How do I create an account?",
+          "answer": "You don't need to create an account to use this application."
+        },
+        "how-get-started": {
+          "question": "How do I get started?",
+          "answer": "Go to the 'How to use section' to get started."
+        }
+      }
     }
   },
   "hr": {
@@ -64,7 +79,22 @@
       },
       "download": "Preuzmite našu aplikaciju",
       "app-build": "Verzija",
-      "android-version": "Android verzija"
+      "android-version": "Android verzija",
+      "faq": {
+        "title": "Često postavljana pitanja",
+        "free-to-use": {
+          "question": "Je li aplikacija besplatna?",
+          "answer": "Da, aplikacija je besplatna."
+        },
+        "how-create-account": {
+          "question": "Kako mogu kreirati račun?",
+          "answer": "Ne morate kreirati račun za korištenje ove aplikacije."
+        },
+        "how-get-started": {
+          "question": "Gdje da započnem?",
+          "answer": "Za početak idite na odjeljak \"Upute korištenja\"."
+        }
+      }
     }
   }
 }
