@@ -4,6 +4,7 @@ import HowToUse from "./HowToUse";
 import Download from "./Download";
 import { useTranslation } from "react-i18next";
 import FAQ from "./FAQ";
+import ContactUs from "./ContactUs";
 
 const LandingPage: React.FC = () => {
   const [t] = useTranslation();
@@ -50,6 +51,9 @@ const LandingPage: React.FC = () => {
       </div>
       <div id="FAQ">
         <FAQ />
+      </div>
+      <div id="ContactUs">
+        <ContactUs />
       </div>
     </>
   );

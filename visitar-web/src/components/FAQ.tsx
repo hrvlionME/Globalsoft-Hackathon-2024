@@ -35,7 +35,7 @@ const FAQ: React.FC = () => {
   return (
     <>
       <section className="relative mx-4 my-40 md:mx-20 lg:mx-40 xl:mx-72">
-        <h1 className="text-sec relative my-20 text-center text-6xl sm:text-6xl md:text-8xl">
+        <h1 className="text-sec relative my-20 text-center text-4xl lg:text-5xl">
           {t("faq.title")}
         </h1>
 
@@ -48,7 +48,7 @@ const FAQ: React.FC = () => {
             <div className="flex flex-col items-center">
               <h2
                 onClick={() => toggleAnswer(index)}
-                className="text-sec relative my-5 flex cursor-pointer items-center justify-center text-2xl sm:text-2xl md:text-6xl">
+                className="text-sec relative my-5 flex cursor-pointer items-center justify-center text-2xl md:text-4xl">
                 {openItems[index] ? (
                   <FiMinus className="mr-2" />
                 ) : (
@@ -58,7 +58,7 @@ const FAQ: React.FC = () => {
               </h2>
 
               {openItems[index] && (
-                <h3 className="text-pri my-5 text-2xl md:text-4xl">
+                <h3 className="text-pri my-5 text-lg md:text-2xl">
                   {t(item.answer)}
                 </h3>
               )}
