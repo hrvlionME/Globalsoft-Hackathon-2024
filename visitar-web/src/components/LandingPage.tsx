@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import backgroundVideo from "../assets/backgroundVideo.mp4";
+import HowToUse from "./HowToUse";
 
 const LandingPage: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -36,7 +37,9 @@ const LandingPage: React.FC = () => {
         </h2>
         <div className="flex-[2]"></div>
       </div>
-      <div id="how-to-use">how to use</div>
+      <div id="how-to-use">
+        <HowToUse />
+      </div>
       <div id="download">download</div>
     </>
   );

@@ -10,6 +10,7 @@ export default {
       colors: {
         pri: "#081F4D",
         sec: "#0083FF",
+        gen: "#3B4D71",
       },
       keyframes: {
         fadeIn: {
