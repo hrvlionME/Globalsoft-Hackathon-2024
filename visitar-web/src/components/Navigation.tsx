@@ -4,7 +4,6 @@ import Close from "./icons/Close";
 import Menu from "./icons/Menu";
 
 const Navigation: React.FC = () => {
-  // Used for small screen sizes
   const [sidebarOpened, setSidebarOpened] = useState(false);
 
   return (

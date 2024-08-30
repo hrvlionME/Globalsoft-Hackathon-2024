@@ -3,6 +3,7 @@ import backgroundVideo from "../assets/backgroundVideo.mp4";
 import HowToUse from "./HowToUse";
 import Download from "./Download";
 import FAQ from "./FAQ";
+import ContactUs from "./ContactUs";
 
 const LandingPage: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -47,6 +48,9 @@ const LandingPage: React.FC = () => {
       </div>
       <div id="FAQ">
         <FAQ />
+      </div>
+      <div id="contact">
+        <ContactUs />
       </div>
     </>
   );
