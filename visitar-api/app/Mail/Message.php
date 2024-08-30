@@ -15,14 +15,16 @@ class Message extends Mailable
 
     public $mailMessage;
     public $subject;
+    public $email;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($emailMessage, $subject)
+    public function __construct($emailMessage, $subject, $email)
     {
         $this->mailMessage = $emailMessage;
         $this->subject = $subject;
+        $this->email = $email;
     }
 
     /**
