@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import backgroundVideo from "../assets/backgroundVideo.mp4";
 import HowToUse from "./HowToUse";
+import Download from "./Download";
 
 const LandingPage: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -40,7 +41,9 @@ const LandingPage: React.FC = () => {
       <div id="how-to-use">
         <HowToUse />
       </div>
-      <div id="download">download</div>
+      <div id="download">
+        <Download />
+      </div>
     </>
   );
 };

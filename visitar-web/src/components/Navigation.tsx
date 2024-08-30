@@ -17,7 +17,7 @@ const Navigation: React.FC = () => {
               alt="Landmarks AR"
             />
           </div>
-          <span className="font-title text-xl">Landmarks AR</span>
+          <h1 className="text-xl">Landmarks AR</h1>
         </div>
         <div className="block md:hidden">
           <button
@@ -27,7 +27,7 @@ const Navigation: React.FC = () => {
           </button>
         </div>
         <nav
-          className={`font-title flex w-full overflow-hidden transition-all md:max-h-full md:w-auto md:items-center ${sidebarOpened ? "max-h-[300px]" : "max-h-0"}`}>
+          className={`flex w-full overflow-hidden transition-all md:max-h-full md:w-auto md:items-center ${sidebarOpened ? "max-h-[300px]" : "max-h-0"}`}>
           <ul className="flex w-full flex-col items-center text-lg md:flex-row">
             <li className="my-3 mr-4 block items-center md:my-0 md:inline-block">
               <a

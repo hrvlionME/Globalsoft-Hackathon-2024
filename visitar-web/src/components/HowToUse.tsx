@@ -5,7 +5,7 @@ const HowToUse: React.FC = () => {
   return (
     <>
       <section className="mx-4 my-40 md:mx-20 lg:mx-40 xl:mx-72">
-        <h1 className="font-title text-sec relative my-20 text-center text-6xl sm:text-6xl md:text-8xl">
+        <h1 className="text-sec relative my-20 text-center text-6xl sm:text-6xl md:text-8xl">
           HOW TO USE
         </h1>
         <div className="grid grid-cols-1 gap-y-8 sm:gap-y-12 lg:gap-y-16">
@@ -20,7 +20,7 @@ const HowToUse: React.FC = () => {
                 />
               </div>
               <div className="p-4 md:w-1/2 md:p-7">
-                <h2 className="text-sec font-title py-3 text-center text-2xl transition duration-200 md:text-left md:text-2xl">
+                <h2 className="text-sec py-3 text-center text-2xl transition duration-200 md:text-left md:text-2xl">
                   Download the app and run the installation
                 </h2>
                 <p className="text-gen pb-5 text-lg">
