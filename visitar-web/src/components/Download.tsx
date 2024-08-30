@@ -19,7 +19,7 @@ const Download: React.FC = () => {
         <div className="flex items-center justify-between gap-x-10">
           <div className="z-10 mt-5 hidden rounded-sm bg-white p-2 md:flex">
             <QRCodeSVG
-              value="/app.apk"
+              value={`${window.location.origin}/app.apk`}
               size={192}
             />
           </div>
