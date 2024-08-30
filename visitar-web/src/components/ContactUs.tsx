@@ -12,10 +12,8 @@ const ContactUs: React.FC = () => {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  // State for validation
   const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({});
 
-  // Validate function for individual field
   const validateField = (field: string, value: string) => {
     let error = "";
     switch (field) {
@@ -34,9 +32,7 @@ const ContactUs: React.FC = () => {
     return error;
   };
 
-  // On change handler for inputs with real-time validation
   const handleInputChange = (field: string, value: string) => {
-    // Update state for the corresponding input
     switch (field) {
       case "name":
         setName(value);
@@ -51,7 +47,6 @@ const ContactUs: React.FC = () => {
         break;
     }
 
-    // Validate the input field and update errors
     setErrors((prevErrors) => ({
       ...prevErrors,
       [field]: validateField(field, value),
@@ -65,7 +60,6 @@ const ContactUs: React.FC = () => {
       message: validateField("message", message),
     };
 
-    // Filter out empty errors
     const filteredErrors = Object.fromEntries(
       Object.entries(validationErrors).filter(([_, value]) => value)
     );
