@@ -1,0 +1,70 @@
+{
+  "en": {
+    "translation": {
+      "mobile-phone": "Mobile phone",
+      "mobile-phone-qr-guide": "Mobile QR Code Scanning Guide",
+      "navbar": {
+        "home": "Home",
+        "how-to-use": "How to use",
+        "download": "Download",
+        "about": "About",
+        "contact": "Contact"
+      },
+      "landing-page": {
+        "subtitle": "Experience Široki Brijeg through augmented reality",
+        "video-error": "Your browser does not support the video tag."
+      },
+      "section": {
+        "download": {
+          "title": "Download the app and run the installation",
+          "body": "REMOVE ME"
+        },
+        "qr": {
+          "title": "Find QR codes at the city's landmarks",
+          "body": "REMOVE ME"
+        },
+        "library": {
+          "title": "Explore the city's landmarks in the application's library",
+          "body": "REMOVE ME"
+        }
+      },
+      "download": "Download our app",
+      "app-build": "App build",
+      "android-version": "Android version"
+    }
+  },
+  "hr": {
+    "translation": {
+      "mobile-phone": "Mobilni telefon",
+      "mobile-phone-qr-guide": "Vodič za skeniranje QR koda na mobilnom telefonu",
+      "navbar": {
+        "home": "Početna",
+        "how-to-use": "Upute korištenja",
+        "download": "Preuzimanje",
+        "about": "O nama",
+        "contact": "Kontakt"
+      },
+      "landing-page": {
+        "subtitle": "Doživite Široki Brijeg kroz proširenu stvarnost",
+        "video-error": "Your browser does not support the video tag."
+      },
+      "section": {
+        "download": {
+          "title": "Preuzmite aplikaciju i pokrenite instalaciju",
+          "body": "REMOVE ME"
+        },
+        "qr": {
+          "title": "Pronađite QR kodove na znamenitostima grada",
+          "body": "REMOVE ME"
+        },
+        "library": {
+          "title": "Istražite gradske znamenitosti u knjižnici aplikacije",
+          "body": "REMOVE ME"
+        }
+      },
+      "download": "Preuzmite našu aplikaciju",
+      "app-build": "Verzija",
+      "android-version": "Android verzija"
+    }
+  }
+}
