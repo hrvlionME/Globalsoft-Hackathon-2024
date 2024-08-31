@@ -52,7 +52,7 @@ const LandingPage: React.FC = () => {
       <div id="FAQ">
         <FAQ />
       </div>
-      <div id="ContactUs">
+      <div id="about">
         <ContactUs />
       </div>
     </>
