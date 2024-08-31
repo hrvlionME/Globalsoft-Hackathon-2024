@@ -80,7 +80,7 @@ const ContactUs: React.FC = () => {
 
     try {
       await axios.post(
-        `http://${window.location.origin}:8000/api/sendMessage`,
+        `http://${window.location.hostname}:8000/api/sendMessage`,
         formData
       );
 
