@@ -17,11 +17,11 @@ const Download: React.FC = () => {
           {t("download")}
         </h1>
         <div className="flex flex-col items-center justify-between gap-x-10">
-          <div className="my-4 flex h-min justify-center gap-2 rounded-md bg-gradient-to-br from-white/35 to-white/60 p-4 px-4 py-2">
-            <h2 className="text-shadow-sm text-center font-mono text-white shadow-black/85 sm:text-base md:text-2xl">
+          <div className="my-4 flex h-min justify-center gap-8 rounded-md bg-gradient-to-br from-white/35 to-white/60 p-4 px-4 py-2">
+            <h2 className="text-center font-mono text-white shadow-black/85 text-shadow-sm sm:text-base md:text-2xl">
               {t("app-build")} v1.15
             </h2>
-            <h2 className="text-shadow-sm text-center font-mono text-white shadow-black/85 sm:text-base md:text-2xl">
+            <h2 className="text-center font-mono text-white shadow-black/85 text-shadow-sm sm:text-base md:text-2xl">
               {format(new Date(), "MMM y")}
             </h2>
           </div>

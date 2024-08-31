@@ -34,12 +34,12 @@
       "faq": {
         "title": "Frequently Asked Questions",
         "free-to-use": {
-          "question": "Is this application free to use?",
-          "answer": "Yes, this application is free to use."
+          "question": "Is the application free to use?",
+          "answer": "Yes, the application is free to use."
         },
         "how-create-account": {
           "question": "How do I create an account?",
-          "answer": "You don't need to create an account to use this application."
+          "answer": "You don't need to create an account to use the application."
         },
         "how-get-started": {
           "question": "How do I get started?",
@@ -102,7 +102,7 @@
         },
         "how-create-account": {
           "question": "Kako mogu kreirati račun?",
-          "answer": "Ne morate kreirati račun za korištenje ove aplikacije."
+          "answer": "Ne morate kreirati račun za korištenje aplikacije."
         },
         "how-get-started": {
           "question": "Gdje da započnem?",
