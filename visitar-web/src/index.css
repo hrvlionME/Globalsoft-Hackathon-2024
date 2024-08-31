@@ -40,7 +40,7 @@
 
 @layer components {
   #landing-page-title {
-    @apply z-10 text-6xl text-center text-black transition-opacity duration-1000 !bg-clip-text sm:text-6xl md:text-8xl;
+    @apply z-10 text-4xl text-center text-black transition-opacity duration-1000 !bg-clip-text sm:text-6xl md:text-8xl;
     background: radial-gradient(
       circle at 100%,
       #98d6ff,

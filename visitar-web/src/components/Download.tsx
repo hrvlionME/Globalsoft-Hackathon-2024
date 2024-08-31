@@ -35,7 +35,7 @@ const Download: React.FC = () => {
         <a
           href="/landmarksar.apk"
           download
-          className="z-10 block rounded border-2 border-white bg-sec px-32 py-2 text-white hover:bg-blue-800 focus:ring-1 md:hidden">
+          className="z-10 block rounded border-2 border-white bg-sec px-24 py-2 text-white hover:bg-blue-800 focus:ring-1 md:hidden mx-8 whitespace-nowrap">
           {t("android-version")}
         </a>
       </div>
