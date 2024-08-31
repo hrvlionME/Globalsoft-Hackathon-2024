@@ -27,13 +27,13 @@ const Download: React.FC = () => {
           </div>
           <div className="z-10 mt-5 hidden rounded-sm bg-white p-2 md:flex">
             <QRCodeSVG
-              value={`${window.location.origin}/app.apk`}
+              value={`${window.location.origin}/landmarksar.apk`}
               size={192}
             />
           </div>
         </div>
         <a
-          href="/app.apk"
+          href="/landmarksar.apk"
           download
           className="z-10 block rounded border-2 border-white bg-sec px-32 py-2 text-white hover:bg-blue-800 focus:ring-1 md:hidden">
           {t("android-version")}
