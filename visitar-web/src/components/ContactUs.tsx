@@ -72,8 +72,6 @@ const ContactUs: React.FC = () => {
       return;
     }
 
-    console.log(name, email, message);
-
     const formData = {
       name: name,
       email: email,
@@ -81,7 +79,10 @@ const ContactUs: React.FC = () => {
     };
 
     try {
-      await axios.post("http://localhost:8000/api/sendMessage", formData);
+      await axios.post(
+        `http://${window.location.origin}:8000/api/sendMessage`,
+        formData
+      );
 
       toast.success(t("message-sent"), {
         position: "bottom-right",
